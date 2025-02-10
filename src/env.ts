@@ -1,5 +1,6 @@
-import { createEnv } from "@t3-oss/env-nextjs";
-import { z } from "zod";
+import { createEnv } from '@t3-oss/env-nextjs'
+import { z } from 'zod'
+
 export const env = createEnv({
   server: {
     TURSO_AUTH_TOKEN: z.string(),
@@ -11,4 +12,4 @@ export const env = createEnv({
     TURSO_AUTH_TOKEN: process.env.TURSO_AUTH_TOKEN,
     AUTH_SECRET: process.env.AUTH_SECRET,
   },
-});
+})
